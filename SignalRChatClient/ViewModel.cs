@@ -38,7 +38,7 @@ namespace SignalRChatClient
 
         public ICommand ChangeHeader
         {
-            get => new Command((_) =>
+            get => new Command((arg) =>
             {
                 Header = $"User {UserText}";
             });
